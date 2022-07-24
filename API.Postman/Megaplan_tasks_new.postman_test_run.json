@@ -1,0 +1,425 @@
+{
+	"id": "e8536276-cd40-4f3f-b2b7-cd6c66df3ce6",
+	"name": "Megaplan_tasks_new",
+	"timestamp": "2022-07-10T13:22:43.525Z",
+	"collection_id": "21780321-0f6e5478-117b-498a-a05a-e200373a324b",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 22,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "98a48e89-6ae6-471f-a0ac-dd15d30ba4f3",
+			"name": "access_token",
+			"url": "https://radio-shop.megaplan.by/api/v3/auth/access_token",
+			"time": 167,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				167
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "676ad8b4-ae45-4e44-bc5c-c75d2ce798b0",
+			"name": "Create task",
+			"url": "https://radio-shop.megaplan.by/api/v3/task",
+			"time": 767,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check TaskName": true,
+				"Check ResponsibleID": true,
+				"Check Status": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check TaskName": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check ResponsibleID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check Status": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				767
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check TaskName": true,
+					"Check ResponsibleID": true,
+					"Check Status": true
+				}
+			]
+		},
+		{
+			"id": "62a919e6-0a7c-4f65-930b-aa3f0e1ae35f",
+			"name": "Edit task",
+			"url": "https://radio-shop.megaplan.by/api/v3/task/1006626",
+			"time": 298,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Task Description Text": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Task Description Text": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				298
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Task Description Text": true
+				}
+			]
+		},
+		{
+			"id": "e8b1954f-7eb8-43e8-bc04-cead536d735b",
+			"name": "access_token2",
+			"url": "https://radio-shop.megaplan.by/api/v3/auth/access_token",
+			"time": 94,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				94
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "d3ad13e8-bfa6-4713-882b-ea546e709f0b",
+			"name": "DoAction task",
+			"url": "https://radio-shop.megaplan.by/api/v3/task/1006626/doAction",
+			"time": 575,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check Status": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check Status": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				575
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check Status": true
+				}
+			]
+		},
+		{
+			"id": "f3bfec23-999b-4351-9291-669d5a409287",
+			"name": "End task",
+			"url": "https://radio-shop.megaplan.by/api/v3/task/1006626/doAction",
+			"time": 1476,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check Status": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check Status": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1476
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check Status": true
+				}
+			]
+		},
+		{
+			"id": "ceac8272-5f0b-487f-9382-a2885573789f",
+			"name": "Comment task",
+			"url": "https://radio-shop.megaplan.by/api/v3/task/1006626/comments",
+			"time": 303,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check if comment is present": true,
+				"Check Comment Text": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check if comment is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check Comment Text": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				303
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check if comment is present": true,
+					"Check Comment Text": true
+				}
+			]
+		},
+		{
+			"id": "c8dfc5a0-0151-454b-bbef-3170dedc9c47",
+			"name": "Authorization 1 again",
+			"url": "https://radio-shop.megaplan.by/api/v3/auth/access_token",
+			"time": 157,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				157
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "c7334836-4562-453f-ab75-06af712387e8",
+			"name": "Get_task_from2",
+			"url": "https://radio-shop.megaplan.by/api/v3/task/1006626/doAction",
+			"time": 4732,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check Status": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check Status": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4732
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check Status": true
+				}
+			]
+		},
+		{
+			"id": "e6d762e3-2ab1-4c59-b2a4-003379dea175",
+			"name": "Delete task",
+			"url": "https://radio-shop.megaplan.by/api/v3/task/1006626",
+			"time": 1551,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check removed": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check removed": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1551
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check removed": true
+				}
+			]
+		},
+		{
+			"id": "03577243-3b2a-43e5-ab0a-03e7950eb81a",
+			"name": "404",
+			"url": "https://radio-shop.megaplan.by/api/v3/task/1006626",
+			"time": 78,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Check Not Found": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check Not Found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				78
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Check Not Found": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 10198,
+	"collection": {
+		"requests": [
+			{
+				"id": "98a48e89-6ae6-471f-a0ac-dd15d30ba4f3",
+				"method": "POST"
+			},
+			{
+				"id": "676ad8b4-ae45-4e44-bc5c-c75d2ce798b0",
+				"method": "POST"
+			},
+			{
+				"id": "62a919e6-0a7c-4f65-930b-aa3f0e1ae35f",
+				"method": "POST"
+			},
+			{
+				"id": "e8b1954f-7eb8-43e8-bc04-cead536d735b",
+				"method": "POST"
+			},
+			{
+				"id": "d3ad13e8-bfa6-4713-882b-ea546e709f0b",
+				"method": "POST"
+			},
+			{
+				"id": "f3bfec23-999b-4351-9291-669d5a409287",
+				"method": "POST"
+			},
+			{
+				"id": "ceac8272-5f0b-487f-9382-a2885573789f",
+				"method": "POST"
+			},
+			{
+				"id": "c8dfc5a0-0151-454b-bbef-3170dedc9c47",
+				"method": "POST"
+			},
+			{
+				"id": "c7334836-4562-453f-ab75-06af712387e8",
+				"method": "POST"
+			},
+			{
+				"id": "e6d762e3-2ab1-4c59-b2a4-003379dea175",
+				"method": "DELETE"
+			},
+			{
+				"id": "03577243-3b2a-43e5-ab0a-03e7950eb81a",
+				"method": "DELETE"
+			}
+		]
+	}
+}
